@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atish Jagtap - DevOps Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #f5f7fa;
+      --text-color: #333;
+      --header-bg: #0a192f;
+      --section-bg: #fff;
+    }
+    body.dark-mode {
+      --bg-color: #0d1117;
+      --text-color: #e6edf3;
+      --header-bg: #161b22;
+      --section-bg: #1e222a;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: all 0.3s ease;
+    }
+
+    header {
+      background-color: var(--header-bg);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1rem;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.4rem 1rem;
+      background-color: #0077cc;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: var(--section-bg);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-color);
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    <h1>Atish Prakash Jagtap</h1>
+    <p>DevOps Engineer | Kubernetes | AWS | Terraform | CI/CD</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm an experienced DevOps Engineer with 3+ years of hands-on experience in cloud infrastructure, Kubernetes (EKS, ECS, RKE), Docker, CI/CD automation, and infrastructure-as-code using Terraform and Ansible. I’m passionate about building reliable, secure, and scalable systems and driving continuous improvement in engineering pipelines.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Cloud:</strong> AWS (EC2, S3, IAM, VPC, EKS, ECS, Lambda, etc.)</li>
+      <li><strong>Containers:</strong> Docker, Podman, Docker Swarm, Kubernetes, Helm, RKE, OpenShift</li>
+      <li><strong>CI/CD:</strong> Jenkins, Argo CD, AWS DevOps, Azure DevOps, GitHub, Bitbucket</li>
+      <li><strong>IaC:</strong> Terraform, Terraform Cloud</li>
+      <li><strong>Monitoring:</strong> Prometheus, Grafana, ELK Stack, Sentry</li>
+      <li><strong>Configuration Management:</strong> Ansible</li>
+      <li><strong>Security:</strong> Trivy, SonarQube</li>
+      <li><strong>Other Tools:</strong> Git, Bash, Postman, DBeaver</li>
+      <li><strong>OS:</strong> Linux (RHEL, Ubuntu, CentOS), Windows</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li><a href="https://www.credly.com/badges/7425987c-4fc4-4b61-ba3e-25cfbdea749d" target="_blank">AWS Certified DevOps Engineer - Professional</a></li>
+      <li><a href="https://www.credly.com/badges/765d175d-5d34-4044-b3b2-f62497765d50/public_url" target="_blank">AWS Certified Solutions Architect - Associate</a></li>
+      <li><a href="https://www.credly.com/badges/b326cb2e-a8c6-4c80-bed6-d5971d424a56/linked_in_profile" target="_blank">CKA: Certified Kubernetes Administrator</a></li>
+      <li><a href="https://rhtapps.redhat.com/verify?certId=220-018-824" target="_blank">Red Hat Certified System Administrator</a></li>
+      <li><a href="https://www.credly.com/badges/ef6af8bd-a402-40aa-a511-93afea0b099b" target="_blank">HashiCorp Certified: Terraform Associate</a></li>
+      <li><a href="https://oneroadmap.io/skills/sql/certificate/CERT-3B5944BF" target="_blank">SQL Certification</a></li>
+      <li><a href="https://oneroadmap.io/skills/devops/certificate/CERT-2DAF37A8" target="_blank">DevOps Certification</a></li>
+    </ul>
+  </section>
+
+  <div class="contact">
+    <p>📧 atishjagtap999@gmail.com | 📞 +91 8180871999</p>
+    <p><a href="https://github.com/Atish1919" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/atish-jagtap" target="_blank">LinkedIn</a></p>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const btn = document.querySelector('.toggle-btn');
+      btn.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+    }
+  </script>
+</body>
+</html>
